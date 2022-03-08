@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<hr>
+	<form action="RegisterServlet" method="post" enctype="multipart/form-data">
+		Name: <input type="text" name="name" placeholder="Name"> <br>
+		Image: <input type="file" name="image" placeholder="Image"> <br>
+		Gender: <input type="radio" name="gender" value="true" checked="checked"> Male
+		<input type="radio" name="gender" value="false" checked="checked"> Female
+		<br> <br>
+		Country:
+		<select name="country" >
+			<option value="VietName">VietNam</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Japan">Japan</option>
+		
+		</select>
+		<input type="submit" value="Register">
+		<input type="reset" value="Reset">
+	
+	</form>
+</body>
+</html>
